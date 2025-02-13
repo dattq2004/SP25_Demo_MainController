@@ -4,7 +4,7 @@
  */
 package model;
 
-import java.util.Date;
+import java.sql.Timestamp;
 
 /**
  *
@@ -16,12 +16,12 @@ public class Product {
     private double price;
     private String description;
     private int stock;
-    private Date import_date;
+    private Timestamp import_date;
 
     public Product() {
     }
 
-    public Product(int id, String name, double price, String description, int stock, Date import_date) {
+    public Product(int id, String name, double price, String description, int stock, Timestamp import_date) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -70,11 +70,11 @@ public class Product {
         this.stock = stock;
     }
 
-    public Date getImport_date() {
+    public Timestamp getImport_date() {
         return import_date;
     }
 
-    public void setImport_date(Date import_date) {
+    public void setImport_date(Timestamp import_date) {
         this.import_date = import_date;
     }
     
