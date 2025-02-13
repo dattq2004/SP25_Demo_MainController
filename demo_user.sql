@@ -59,3 +59,4 @@ UPDATE Product
 SET import_date = GETDATE()
 WHERE import_date IS NULL;
 go
+select * from Product
