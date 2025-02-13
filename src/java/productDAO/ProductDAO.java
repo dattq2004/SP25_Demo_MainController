@@ -42,7 +42,14 @@ public class ProductDAO implements IProductDAO {
 
     @Override
     public List<Product> showListProducts() {
-        
+        String sql = "select * from product";
+        try {
+            PreparedStatement st = connection.prepareStatement(sql);
+            ResultSet rs = st.executeQuery();
+            
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
