@@ -1,0 +1,102 @@
+body {
+  background: #f2f2f2;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Kiểu cho tiêu đề chính */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Kiểu cho tiêu đề phụ */
+h2 {
+  text-align: center;
+  color: #34495e;
+  margin: 20px 0;
+}
+
+/* Kiểu cho các đường link */
+a {
+  text-decoration: none;
+  color: #3498db;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+/* Kiểu cho bảng */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  margin: 0 auto;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Kiểu cho caption của bảng */
+caption h2 {
+  margin: 0;
+  padding: 10px;
+  background: #3498db;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+/* Kiểu cho header và cell của bảng */
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Kiểu cho header của bảng */
+th {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Nền xen kẽ cho các dòng của bảng */
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* Hiệu ứng hover cho các dòng bảng */
+tr:hover {
+  background: #f1f1f1;
+}
+
+/* Kiểu riêng cho các liên kết trong cột hành động */
+td a {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #fff;
+}
+
+td a[href*="edit"] {
+  background-color: #27ae60;
+}
+
+td a[href*="delete"] {
+  background-color: #e74c3c;
+}
+
+td a:hover {
+  opacity: 0.8;
+}
+
+/* Thêm khoảng cách cho đường link "Add New User" */
+h2 a {
+  background: #3498db;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #fff;
+}
