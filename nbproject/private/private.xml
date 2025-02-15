@@ -14,9 +14,11 @@
             <file>file:/E:/FPTU/SEMESTER%204/PRJ/SP25_Demo_MainController/web/assests/css/editstyles.css</file>
             <file>file:/E:/FPTU/SEMESTER%204/PRJ/SP25_Demo_MainController/web/product/editProduct.jsp</file>
             <file>file:/E:/FPTU/SEMESTER%204/PRJ/SP25_Demo_MainController/web/listUser.jsp</file>
+            <file>file:/E:/FPTU/SEMESTER%204/PRJ/SP25_Demo_MainController/src/java/controller/ProductServlet.java</file>
             <file>file:/E:/FPTU/SEMESTER%204/PRJ/SP25_Demo_MainController/web/assests/css/liststyles.css</file>
             <file>file:/E:/FPTU/SEMESTER%204/PRJ/SP25_Demo_MainController/src/java/productDAO/ProductDAO.java</file>
             <file>file:/E:/FPTU/SEMESTER%204/PRJ/SP25_Demo_MainController/src/java/controller/UserServlet.java</file>
+            <file>file:/E:/FPTU/SEMESTER%204/PRJ/SP25_Demo_MainController/src/java/model/User.java</file>
             <file>file:/E:/FPTU/SEMESTER%204/PRJ/SP25_Demo_MainController/web/product/addProduct.jsp</file>
         </group>
     </open-files>
