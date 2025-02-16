@@ -65,9 +65,9 @@ public class ProductServlet extends HttpServlet {
         if (action == null) {
             action = "";
         }
-        switch ("action") {
+        switch (action) {
             case "create":
-                response.sendRedirect("addProduct.jsp");
+                response.sendRedirect("product/addProduct.jsp");
                 break;
             case "update":
                 goUpdateProduct(request, response);
@@ -99,6 +99,7 @@ public class ProductServlet extends HttpServlet {
                 break;
             case "update":
                 updateProduct(request, response);
+                break;
             default:
                 throw new AssertionError();
         }

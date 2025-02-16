@@ -12,7 +12,7 @@ LAPTOP ASUS --%> <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"
     <body>
         <h1>Product Management</h1>
         <h2>
-            <a href="/lab3/product?action=create">Create New Product</a>
+            <a href="/lab3/products?action=create">Create New Product</a>
         </h2>
         <table>
             <caption>
