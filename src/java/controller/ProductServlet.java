@@ -77,6 +77,7 @@ public class ProductServlet extends HttpServlet {
                 break;
             default:
                 showListProducts(request, response);
+                break;
         }
     }
 
@@ -119,7 +120,7 @@ public class ProductServlet extends HttpServlet {
         ProductDAO dao = new ProductDAO();
         Product product_update = dao.selectProductById(id);
         request.setAttribute("product_update", product_update);
-        request.getRequestDispatcher("editProduct.jsp").forward(request, response);
+        request.getRequestDispatcher("product/editProduct.jsp").forward(request, response);
     }
 
     private void deleteProduct(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -133,7 +134,7 @@ public class ProductServlet extends HttpServlet {
         ProductDAO dao = new ProductDAO();
         List<Product> p = dao.showListProducts();
         request.setAttribute("products", p);
-        request.getRequestDispatcher("listProduct.jsp").forward(request, response);
+        request.getRequestDispatcher("product/listProduct.jsp").forward(request, response);
     }
 
     private void createProduct(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

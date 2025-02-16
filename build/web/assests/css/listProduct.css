@@ -1,0 +1,103 @@
+/* Kiểu cho toàn bộ trang */
+body {
+    background: #f9f9f9;
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Tiêu đề chính */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Tiêu đề phụ và đường link Create New Product */
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 a {
+    background: #3498db;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+h2 a:hover {
+    background: #2980b9;
+}
+
+/* Kiểu cho bảng sản phẩm */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Kiểu cho caption của bảng */
+caption h2 {
+    margin: 0;
+    padding: 10px;
+    background: #3498db;
+    color: #fff;
+    font-size: 1.5em;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Kiểu cho header và cell của bảng */
+th,
+td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Nền xen kẽ cho các dòng của bảng */
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Hiệu ứng hover cho các dòng */
+tr:hover {
+    background: #f1f1f1;
+}
+
+/* Kiểu cho phân trang */
+.pageNums {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pageNums a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 4px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    transition: background 0.3s ease;
+}
+
+.pageNums a:hover {
+    background: #e0e0e0;
+}
+
+.num-active {
+    background: #3498db;
+    color: #fff;
+    border: 1px solid #3498db;
+}

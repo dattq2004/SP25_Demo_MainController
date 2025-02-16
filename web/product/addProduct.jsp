@@ -1,14 +1,9 @@
-<%-- 
-    Document   : addProduct
-    Created on : Feb 12, 2025, 5:22:52 PM
-    Author     : LAPTOP ASUS
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%-- Document : addProduct Created on : Feb 12, 2025, 5:22:52 PM Author : LAPTOP
+ASUS --%> <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>JSP Page</title>
     </head>
     <body>

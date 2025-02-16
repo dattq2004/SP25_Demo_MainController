@@ -57,7 +57,7 @@ public class ProductDAO implements IProductDAO {
                         rs.getTimestamp("import_date"));
                 products.add(p);
             }
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return products;
