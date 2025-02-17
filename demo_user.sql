@@ -59,4 +59,11 @@ UPDATE Product
 SET import_date = GETDATE()
 WHERE import_date IS NULL;
 go
+go
+insert into Product (name, price, description, stock)
+values 
+(
+	'dat', 3.3, 'khong co gi', 5
+);
 select * from Product
+

@@ -22,22 +22,21 @@ public class ProductDAO implements IProductDAO {
 
     @Override
     public void insert(Product p) {
-        String sql = "INSERT INTO [dbo].[Product]\n"
-                + "           ([name]\n"
-                + "           ,[price]\n"
-                + "           ,[description]\n"
-                + "           ,[stock]\n"
-                + "     VALUES\n"
-                + "           (?,?,?,?,?)";
+        String sql = "INSERT INTO Product (name, price, description, stock) VALUES (?, ?, ?, ?)";
 
-        try {
-            PreparedStatement st = connection.prepareStatement(sql);
+        try (PreparedStatement st = connection.prepareStatement(sql)) {
             st.setString(1, p.getName());
             st.setDouble(2, p.getPrice());
             st.setString(3, p.getDescription());
             st.setInt(4, p.getStock());
+            int rowsInserted = st.executeUpdate();
+            if (rowsInserted > 0) {
+                System.out.println("A new product was inserted successfully!");
+            } else {
+                System.out.println("No product was inserted.");
+            }
         } catch (SQLException e) {
-
+            e.printStackTrace();
         }
     }
 
@@ -64,7 +63,8 @@ public class ProductDAO implements IProductDAO {
     }
 
     @Override
-    public Product selectProductById(int id) {
+    public Product selectProductById(int id
+    ) {
         String sql = "select * from product where id = ?";
         try {
             PreparedStatement st = connection.prepareStatement(sql);
@@ -86,7 +86,8 @@ public class ProductDAO implements IProductDAO {
     }
 
     @Override
-    public boolean updateProduct(Product p) {
+    public boolean updateProduct(Product p
+    ) {
         String sql = "UPDATE [dbo].[Product]\n"
                 + "   SET [name] = ?\n"
                 + "      ,[price] = ?\n"
@@ -108,7 +109,8 @@ public class ProductDAO implements IProductDAO {
     }
 
     @Override
-    public boolean deleteProduct(int id) {
+    public boolean deleteProduct(int id
+    ) {
         String sql = "DELETE FROM [dbo].[Product]\n"
                 + "      WHERE id = ?";
         try {
@@ -124,7 +126,8 @@ public class ProductDAO implements IProductDAO {
     public static void main(String[] args) {
         ProductDAO dao = new ProductDAO();
         List<Product> p = dao.showListProducts();
-        System.out.println(p.get(0).getPrice());
+        Product p_new = new Product("dat", 3, "ne", 2);
+        dao.insert(p_new);
 
     }
 }

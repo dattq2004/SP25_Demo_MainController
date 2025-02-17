@@ -137,7 +137,7 @@ public class ProductServlet extends HttpServlet {
         request.setAttribute("products", p);
         request.getRequestDispatcher("product/listProduct.jsp").forward(request, response);
     }
-
+ 
     private void createProduct(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter("name");
         double price = Double.parseDouble(request.getParameter("price"));
