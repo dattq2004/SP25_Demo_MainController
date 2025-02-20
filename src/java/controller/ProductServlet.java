@@ -120,9 +120,11 @@ public class ProductServlet extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         ProductDAO dao = new ProductDAO();
         Product product_update = dao.selectProductById(id);
-        request.setAttribute("product_update", product_update);
-        request.getRequestDispatcher("product/editProduct.jsp").forward(request, response);
-    }
+        System.out.println(product_update);
+        request.setAttribute("p", product_update);
+        System.out.println(product_update);
+        request.getRequestDispatcher("/product/editProduct.jsp").forward(request, response);
+    }   
 
     private void deleteProduct(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));

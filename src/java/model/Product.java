@@ -4,13 +4,14 @@
  */
 package model;
 
+import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
  *
  * @author LAPTOP ASUS
  */
-public class Product {
+public class Product implements Serializable {
     private int id;
     private String name;
     private double price;

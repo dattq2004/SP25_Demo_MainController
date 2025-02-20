@@ -63,9 +63,8 @@ public class ProductDAO implements IProductDAO {
     }
 
     @Override
-    public Product selectProductById(int id
-    ) {
-        String sql = "select * from product where id = ?";
+    public Product selectProductById(int id) {
+            String sql = "select * from Product where id = ?";
         try {
             PreparedStatement st = connection.prepareStatement(sql);
             st.setInt(1, id);
@@ -126,8 +125,7 @@ public class ProductDAO implements IProductDAO {
     public static void main(String[] args) {
         ProductDAO dao = new ProductDAO();
         List<Product> p = dao.showListProducts();
-        Product p_new = new Product("dat", 3, "ne", 2);
-        dao.insert(p_new);
-
+        
+        System.out.println(dao.selectProductById(2));
     }
 }

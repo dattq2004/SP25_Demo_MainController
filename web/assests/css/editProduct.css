@@ -1,0 +1,100 @@
+/* Kiểu cho toàn bộ trang */
+body {
+  background: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Tiêu đề chính */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Tiêu đề phụ và đường link Back to Product List */
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+h2 a {
+  background: #3498db;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+h2 a:hover {
+  background: #2980b9;
+}
+
+/* Kiểu cho form chỉnh sửa sản phẩm */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Kiểu cho bảng bên trong form */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Kiểu cho caption của bảng */
+caption h2 {
+  margin: 0;
+  padding: 10px;
+  background: #3498db;
+  color: #fff;
+  font-size: 1.5em;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Kiểu cho các ô (cell) của bảng */
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Kiểu cho các input */
+input[type="text"],
+input[type="number"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Kiểu cho nút submit */
+input[type="submit"] {
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: block;
+  margin: 20px auto 0;
+}
+
+input[type="submit"]:hover {
+  background: #219150;
+}
