@@ -72,6 +72,8 @@ go
 INSERT INTO Orders (user_id, total_price, status)
 VALUES (2, 1500.00, N'Pending');
 go
+select * from Orders
+go
 CREATE TABLE OrderDetails (
     id INT PRIMARY KEY IDENTITY(1,1), -- ID chi tiết đơn hàng, tự động tăng
     order_id INT NOT NULL, -- Liên kết với bảng Orders
